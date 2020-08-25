@@ -32,5 +32,9 @@ public class ZohoEventListner extends AbstractWebDriverEventListener {
 	public WebConnector getDriver() {
 		return getSession().getCon();
 	}
+	
+	public void log(String message) {
+		getSession().log(message);
+	}
 
 }

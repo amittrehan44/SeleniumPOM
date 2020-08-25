@@ -18,9 +18,12 @@ public interface ZohoPage extends ZohoNormalPage, ZohoSessionPage {
 	 void submitUsername();
 	 ZohoPage goToEnterUsernamePage() throws InterruptedException;
 	 EnterPasswordPage goToPasswordPage();
-	WebConnector validator(boolean stopExecution);
+	 WebConnector validator(boolean stopExecution);
 	
 	// session based functions
 	 void createDeal();
 	 void logout();
+	 
+	 //reports
+	 void log(String message);
 }

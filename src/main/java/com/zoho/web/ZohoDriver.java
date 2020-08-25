@@ -23,7 +23,7 @@ public  class ZohoDriver extends ZohoValidationDriver {
 
 	public void openBrowser(String browser) {
 		// TODO Auto-generated method stub
-		System.out.println("inside class ZohoDriver > openBrowser");
+		log("Opening Brwsercinside class ZohoDriver > openBrowser: "+browser);
 		System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
 		System.setProperty("webdriver.chrome.driver", "/Users/amit/Documents/Selenium/chromedriver");
 		driver = new EventFiringWebDriver(new ChromeDriver());

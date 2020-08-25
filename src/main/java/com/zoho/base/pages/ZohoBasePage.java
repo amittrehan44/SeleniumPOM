@@ -96,5 +96,9 @@ public  class ZohoBasePage implements ZohoPage {
 		return getSession().getCon();
 		
 	}
+	
+	public void log(String message) {
+		getSession().log(message);
+	}
 
 }

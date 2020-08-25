@@ -21,6 +21,7 @@ public class HomePage extends ZohoBasePage {
 	WebElement loginLink1;
 
 	public ZohoPage goToEnterUsernamePage() throws InterruptedException {
+		log("going to Enter Username Page");
 		Thread.sleep(2000);
 		loginLink1.click();
 		return new EnterUsernamePage();

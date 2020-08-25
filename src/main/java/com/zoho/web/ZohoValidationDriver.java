@@ -71,5 +71,9 @@ public abstract class  ZohoValidationDriver implements WebConnector {
 	public ZohoTestSession getSession() {
 		return (ZohoTestSession)Reporter.getCurrentTestResult().getTestContext().getAttribute("session");
 	}
+	
+	public void log(String message) {
+		getSession().log(message);
+	}
 
 }

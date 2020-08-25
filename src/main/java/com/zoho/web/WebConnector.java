@@ -19,4 +19,5 @@ public interface WebConnector extends ZohoWebConnector {
 	void assertAll();
 	SoftAssert getSoftAssert();
 	void setSoftAssert(SoftAssert softAssert);
+	public void log(String message);
 }

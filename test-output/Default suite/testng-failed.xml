@@ -5,7 +5,9 @@
     <classes>
       <class name="testCases.LoginTest">
         <methods>
+          <include name="init"/>
           <include name="loginTest"/>
+          <include name="quit"/>
         </methods>
       </class> <!-- testCases.LoginTest -->
     </classes>

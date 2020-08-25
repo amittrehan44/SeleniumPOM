@@ -12,14 +12,14 @@ public class LaunchPage extends ZohoBasePage {
 	}
 
 	public ZohoPage openBrowser(String Browser) {;
-		System.out.println("OpenBrowser in LaunchPage class");
+		log("OpenBrowser in LaunchPage class");
 		ZohoTestSession session = getSession();
 		session.getCon().openBrowser(Browser);
 		return this;
 	}
 
 	public ZohoPage goToHomePage() {
-		System.out.println("Go To Home page from Launch Page");
+		log("Go To Home page from Launch Page");
 		ZohoTestSession session = getSession();
 		session.getCon().navigate("https://Zoho.com");
 		return new HomePage();
